@@ -16,4 +16,4 @@
 	- if just scrape and save the SVG as an .svg file (`<img src="scrapedSVG.svg"/>`), you can't style the elements
 	
 
-<img src="scrapedSVG.svg"/>
+<img src="scrapedSVG.png"/>
