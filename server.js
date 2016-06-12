@@ -59,15 +59,20 @@ app.get('/scrape', function(req, res) {
         // Parameter 2 :  JSON.stringify(json, null, 4) - the data to write, here we do an extra step by calling JSON.stringify to make our JSON easier to read
         // Parameter 3 :  callback function - a callback function to let us know the status of our function
         var prettyJSON = JSON.stringify(json, null, 4);
+
+        var svgFile = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 720 120"> ' + json + ' </svg>';
+
         fs.writeFile('output.json', prettyJSON, function(err) {
-
             console.log('File successfully written! - Check your project directory for the output.json file');
+        })
 
+        fs.writeFile('scrapedSVG.svg', svgFile, function(err) {
+            console.log('File successfully written! - Check your project directory for the scrapedSVG.svg file');
         })
 
         // Finally, we'll just send out a message to the browser reminding you that this app does not have a UI.
         //res.send('Check your console!')
-        res.send('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 720 120"> ' + json + ' </svg>')
+        res.send(svgFile)
 
 
     })
@@ -78,6 +83,6 @@ app.get('/scrape', function(req, res) {
 
 app.listen('8081')
 
-console.log('Magic happens on port 8081');
+console.log('Magic happens at localhost:8081/scrape');
 
 exports = module.exports = app;
