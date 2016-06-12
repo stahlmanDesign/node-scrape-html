@@ -14,3 +14,6 @@
 - this allows it to be loaded and parsed into an SVG
 	- parsing and adding to DOM this way allow elements to be styled
 	- if just scrape and save the SVG as an .svg file (`<img src="scrapedSVG.svg"/>`), you can't style the elements
+	
+
+<img src="scrapedSVG.svg"/>

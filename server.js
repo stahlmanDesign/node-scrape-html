@@ -67,7 +67,7 @@ app.get('/scrape', function(req, res) {
 
         // Finally, we'll just send out a message to the browser reminding you that this app does not have a UI.
         //res.send('Check your console!')
-        res.send("<svg viewBox='0 0 720 120'> " + json + " < /svg>")
+        res.send('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 720 120"> ' + json + ' </svg>')
 
 
     })
