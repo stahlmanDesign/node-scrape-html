@@ -15,5 +15,9 @@
 	- parsing and adding to DOM this way allow elements to be styled
 	- if just scrape and save the SVG as an .svg file (`<img src="scrapedSVG.svg"/>`), you can't style the elements
 	
+## Note: currently installed on justinstahlman.com/cv/svg/node-scrape/webpage
+- tried forever server.js but not staying
+- must `node server.js` for now and go to `justinstahlman.com:8081/scrape`
+- then reload justinstahlman.com/cv to see updated svg
 
 <img src="scrapedSVG.png"/>

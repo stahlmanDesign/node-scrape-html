@@ -62,11 +62,11 @@ app.get('/scrape', function(req, res) {
 
         var svgFile = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 720 120"> ' + json + ' </svg>';
 
-        fs.writeFile('output.json', prettyJSON, function(err) {
-            console.log('File successfully written! - Check your project directory for the output.json file');
-        })
+        // fs.writeFile('output.json', prettyJSON, function(err) {
+        //     console.log('File successfully written! - Check your project directory for the output.json file');
+        // })
 
-        fs.writeFile('scrapedSVG.svg', svgFile, function(err) {
+        fs.writeFile('../scrapedSVG.svg', svgFile, function(err) {
             console.log('File successfully written! - Check your project directory for the scrapedSVG.svg file');
         })
 
