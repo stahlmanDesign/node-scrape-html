@@ -15,9 +15,12 @@
 	- parsing and adding to DOM this way allow elements to be styled
 	- if just scrape and save the SVG as an .svg file (`<img src="scrapedSVG.svg"/>`), you can't style the elements
 	
-## Note: currently installed on justinstahlman.com/cv/svg/node-scrape/webpage
+## Note: currently installed on justinstahlman.com/cv/svg/node-scrape-webpage
 - tried forever server.js but not staying
 - must `node server.js` for now and go to `justinstahlman.com:8081/scrape`
 - then reload justinstahlman.com/cv to see updated svg
+
+- update Jan 5 2017: installed nodemon globally on server
+- now type `nodemon server.js` in `justinstahlman.com/cv/svg/node-scrape-webpage`
 
 <img src="scrapedSVG.png"/>
